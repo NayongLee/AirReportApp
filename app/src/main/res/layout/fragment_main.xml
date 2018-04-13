@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffffff"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/type1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/e1"
+                    android:gravity="center"
+                    android:text="@string/type"
+                    android:textSize="25sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/type1_1"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="농도"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/type1_2"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=" 단위"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/type2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/e1"
+                    android:gravity="center"
+                    android:text="@string/type"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/type2_1"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="농도"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/type2_2"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=" 단위"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="표시할 항목"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical"
+            android:padding="1dp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/checkpm10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/pm10"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkO3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/o3"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/co"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkno2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no2"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/so2"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/tex"
+            android:paddingLeft="15dp"
+            android:text="표시할 위치"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.3">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="현재 위치"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시도별 : "
+                        android:textSize="18sp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:id="@+id/stationName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="관측소"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/findText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="서울"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:gravity="bottom"
+                android:layout_weight="0.4">
+
+                <Button
+                    android:id="@+id/findbutton1"
+                    android:onClick="onfindButton1Clicked"
+                    android:background="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="선택하기"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="0.4"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|right"
+                android:text="연결되지 않음"/>
+            <Button
+                android:id="@+id/bluetoothbutton"
+                android:onClick="onBluetoothButtonClicked"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:background="@android:color/darker_gray"
+                android:drawableLeft="@drawable/ic_bluetooth_connected"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:text="연결하기" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/sendButton"
+            android:onClick="onSendButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:text="보내기" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
